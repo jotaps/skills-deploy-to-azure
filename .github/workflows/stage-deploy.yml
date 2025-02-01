@@ -30,7 +30,7 @@ jobs:
         run: npm run build
         
       - name: Deploy to Azure Web App (Staging)
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         with:
           app-name: 'your-app-name-staging'
           package: .
@@ -67,7 +67,7 @@ jobs:
         run: npm run build
         
       - name: Deploy to Azure Web App (Production)
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         with:
           app-name: 'your-app-name-prod'
           package: .
